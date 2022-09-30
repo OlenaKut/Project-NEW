@@ -1,24 +1,7 @@
-let Address = class {
-  constructor(country, city, street, number) {
-    (this.country = country),
-      (this.city = city),
-      (this.street = street),
-      (this.number = number);
-  }
-};
-let Citizen = class {
-  constructor(firstname, lastname, age, registered) {
-    (this.firstname = firstname),
-      (this.lastname = lastname),
-      (this.age = age),
-      (this.registered = registered),
-      function setAddress(address) {
-        (this.address = address), (this.registered = true);
-      };
-  }
-};
-//Create main, header
+import { Address, Citizen } from "./constructors.js";
 
+
+//Create main, header
 let main = document.createElement("main");
 let header = document.getElementById("header");
 header.insertBefore(main, header.children[1]);
@@ -200,11 +183,6 @@ function newFunction() {
   let fieldsOne = formTwo.querySelectorAll(".field");
 
   formTwo = document.querySelector("#formTwo");
-  /*registerButton = formTwo.querySelector("#registerButton");
-  inputCountry = formTwo.querySelector("#inputCountry");
-  inputCity = formTwo.querySelector("#inputCity");
-  inputStreet = formTwo.querySelector("#inputStreet");
-  inputNumber = formTwo.querySelector("#inputNumber");*/
 
   var generateErrorOne = function (text) {
     var errorOne = document.createElement("div");
@@ -277,5 +255,3 @@ function finnalyFunction() {
   );
   location.reload(true);
 }
-
-

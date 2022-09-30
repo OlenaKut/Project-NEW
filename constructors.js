@@ -17,3 +17,5 @@ let Citizen = class {
       };
   }
 };
+
+export { Address, Citizen };
