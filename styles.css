@@ -1,0 +1,65 @@
+:root {
+  --branding-color: #00ffff;
+  --secondary-color: rgb(255, 255, 0);
+}
+
+.navbar {
+  background-color: var(--branding-color);
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 10px;
+}
+.logo {
+  width: 70px;
+}
+.nav-link {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+.fa-brands {
+  color: white;
+  font-size: 48px;
+}
+main {
+  text-align: center;
+  margin: 30px;
+}
+button {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  background: var(--secondary-color);
+  color: rgb(125, 114, 114);
+  padding: 10px 20px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(209, 203, 203);
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background: var(--branding-color);
+}
+
+form {
+  width: 400px;
+  background: #f3fefe;
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid rgb(210, 233, 247);
+  padding: 20px;
+  border-radius: 10px;
+}
+p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
